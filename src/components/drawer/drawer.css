@@ -1,0 +1,39 @@
+.drawer {
+  height: 100%;
+  background: navy;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  
+  z-index: 200;
+}
+
+.drawer .open {
+  transform: translateX(0);
+  transition: 0.3s ease-in;
+}
+
+.drawer ul { 
+  height: 100%;
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drawer li {
+  padding: 3rem 2rem;
+  
+}
+.drawer li > a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  
+}
+.drawer a:hover, .drawer a:active {
+  color: crimson;
+}
